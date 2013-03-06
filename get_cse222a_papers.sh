@@ -1,1 +1,0 @@
-for pdf in `curl http://cseweb.ucsd.edu/classes/wi13/cse222A-a/syllabus.html --silent | grep 222A-wi13-l | sed 's/.*\/\(222A-wi13-l[0-9]*\.pdf\)".*/\1/'`; do curl http://cseweb.ucsd.edu/classes/wi13/cse222A-a/lectures/$pdf > $pdf; done
